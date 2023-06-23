@@ -1,0 +1,62 @@
+.employee-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #2f0036;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  position: relative;
+  margin: 20px;
+  width: auto;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  .employee-card__id {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .employee-card__avatar-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+    .employee-card__avatar {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .employee-card__name {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: auto;
+  }
+
+  .employee-card__email {
+    margin-top: 10px;
+    text-align: left;
+    display: block;
+    color: #0000008f;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+}
